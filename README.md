@@ -10,6 +10,17 @@ Available categories:
 
 #### `UIView+frame`
 
+Basic getter:
+
+```objective-c
+- (CGFloat)x;
+- (CGFloat)y;
+- (CGFloat)width;
+- (CGFloat)height;
+- (CGPoint)origin;
+- (CGSize)size;
+- (NSString*)description;
+```
 Basic setter:
 
 ```objective-c
