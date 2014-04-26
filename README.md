@@ -27,7 +27,7 @@ Basic setter:
 - (void)setX:(CGFloat)x animate:(BOOL)animate;
 - (void)setY:(CGFloat)y animate:(BOOL)animate;
 ```
-Basic setter with 
+Basic setter with: 
     custom animation time
 
 ```objective-c
