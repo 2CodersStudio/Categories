@@ -27,6 +27,12 @@
 - (void)setX:(CGFloat)x;
 - (void)setY:(CGFloat)y;
 
+/* Increase frame */
+- (CGFloat)addX:(CGFloat)delta;
+- (CGFloat)addY:(CGFloat)delta;
+- (CGFloat)addWidth:(CGFloat)delta;
+- (CGFloat)addHeight:(CGFloat)delta;
+
 /* Basic setter with animation
    0.2 animation time*/
 
