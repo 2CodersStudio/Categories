@@ -33,6 +33,10 @@
 - (CGFloat)addWidth:(CGFloat)delta;
 - (CGFloat)addHeight:(CGFloat)delta;
 
+/* Scale frame */
+
+- (void)scale:(CGFloat)factor centered:(BOOL)centered;
+
 /* Basic setter with animation
    0.2 animation time*/
 

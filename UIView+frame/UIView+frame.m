@@ -100,6 +100,30 @@
 }
 
 #pragma mark -
+#pragma mark Scale
+
+- (void)scale:(CGFloat)factor centered:(BOOL)centered{
+
+    if (factor < 0. || factor == 1.) return;
+    
+    CGFloat finalX = self.x;
+    CGFloat finalY = self.y;
+    
+    if (centered) {
+        
+        CGFloat diference = self.width - (self.width * factor);
+
+        finalX = self.x + (diference)  * 0.5;
+        finalY = self.y + (diference)  * 0.5;
+        
+    }
+    self.frame = CGRectMake(finalX, finalY, self.width * factor, self.height * factor);
+
+    
+
+}
+
+#pragma mark -
 #pragma mark Basic setter with custom time animation
 
 - (void)setWidth:(CGFloat)width duration:(NSTimeInterval)duration{
