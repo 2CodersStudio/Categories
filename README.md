@@ -29,6 +29,21 @@ Basic setter:
 - (void)setX:(CGFloat)x;
 - (void)setY:(CGFloat)y;
 ```
+
+Increase frame
+
+```objective-c
+- (CGFloat)addX:(CGFloat)delta;
+- (CGFloat)addY:(CGFloat)delta;
+- (CGFloat)addWidth:(CGFloat)delta;
+- (CGFloat)addHeight:(CGFloat)delta;
+```
+Scale frame
+
+```objective-c
+- (void)scale:(CGFloat)factor centered:(BOOL)centered;
+```
+
  Basic setter with: 
     animation (time 0.2)
 
